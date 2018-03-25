@@ -1,0 +1,184 @@
+* { box-sizing: border-box; overflow-x: hidden;}
+
+html { font-family: Helvetica; font-size: 16px; color: #888888; background-color: white; text-align: left; margin: 0px; display: block; }
+body { margin: 0; padding: 0; } a { text-decoration: none; color: #696969; }
+strong { font-weight: bold; }
+h1{ font-weight: bold; font-size: 30px; text-align: left; color: #3c3c3c; } h3{ font-weight: bold; font-size: 25px;text-align: left; color: #696969;font-stretch: expanded;}
+h2{ font-weight: bold; font-size: 24px; margin-top: 32px; margin-left: 24px; text-align: left; color: #696969;}
+h3 {font-size: 20px; color: #696969; margin-bottom: 8px;font-weight: bold;}
+h4 {font-size: 18px: color: #696969; margin-bottom: 8px;}
+p { font-size: 14px; text-align: left; color: #696969; }
+
+
+header { height: 64px; width: 100%; background-color: white; position: fixed; display: flex; z-index: 1; align-items: center; justify-content: space-between;}
+header div.center { display: flex; align-items: center;}
+header div img { height: 32px; margin-left: 24px; }
+nav { background-color: white; display: flex; align-items: center; justify-content: space-between; }
+nav ul { margin-right: 8px; overflow: hidden;}
+nav li{ display: inline; padding-right: 16px; color:black; }
+nav li a img {display: none; }
+
+h1, h2, h3, h4, h5, h6, p, span, a, div.naam, footer div {
+  overflow: hidden;
+}
+
+main { position: absolute; top: 64px;}
+section { margin: 0;}
+section#learn { display: flex; flex-direction: column; background-color:#C8C8C8; }
+section#learn div.banner{ display: flex; align-items:center; width: 100%; }
+section#learn div.banner img{ width: 60%; margin: 32px 24px; }
+section#learn div.textbanner{ flex-direction: row-reverse; justify-content: flex-start; margin-left: 24px; width:40%; margin-right: 72px;}
+section#learn div.banner div.text-banner h1 { text-align:left;}
+section#learn div.banner div.text-banner h3 { line-height: 1.5; padding-top: 24px; font-size: 20px;margin-bottom: 24px; width: 320px;}
+section#learn button { padding: 8px; background-color: #3c3c3c; width: 280px; text-align: center; border: none; color: white; font-size:20px; }
+
+section#orientation { display: flex; flex-direction: column;}
+section#orientation div#container { display: flex;}
+section#orientation div.column-large { height: auto; max-width: calc(60vw + 48px); padding-right: 24px;}
+section#orientation div.column-large div.item { margin:32px 24px; display: flex; flex-direction: column; justify-content: center; }
+section#orientation div.column-large div.item img { width: 60vw; }
+section#orientation div.column-large div.text p {line-height: 1.4; margin-top: 24px; margin-left: 24px; margin-right: 24px; }
+section#orientation div.column-large div.text h2 {margin: 32px 0 0 24px;}
+section#orientation div.column-large div.naam {margin: 12px 0 32px 24px; font-size: 12px; font-weight: bold;  }
+section#orientation div.column-small {max-width: calc(40vw - 48px); height: auto; margin-top: 16px;}
+section#orientation div.column-small div.image-content {padding: 16px; display: flex; }
+section#orientation div.column-small div.image-content img { width: 35%; height: 35%; min-width: 151px;}
+section#orientation div.column-small div.grey {background-color:#C8C8C8; }
+section#orientation div.column-small div.text { display: flex; flex-direction: column;justify-content: center; margin-left: 32px;}
+section#orientation div.column-small div.text h2 {font-weight: bold; font-size: 24px; margin-top: 32px; margin-left: 24px; text-align: left; color: #696969;}
+section#orientation div.column-small a { color:blue;}
+
+section#start{ display: flex; flex-direction: column; background-color:#C8C8C8; }
+section#start div#container{ display: flex; justify-content: flex-end; flex-wrap: wrap; flex-direction: row; height: auto; margin: 0 56px 16px;}
+section#start div.photo{ margin: 16px; background-color: white; flex-grow: 1; width: calc(33.3333% - 64px); display: flex; flex-direction: column;}
+section#start div.photo img { width: 100%; }
+section#start h2 { text-align: center; margin: 32px 0 16px;}
+section#start h3 {width: 100%; text-align:left; margin-top: 16px; padding-left: 16px;}
+section#start span { text-align: justify; text-justify: inter-word; padding-left: 16px; margin-bottom: 8px; }
+section#start p { line-height: 1.4; text-align: justify; padding-left: 16px; padding-right: 24px; margin-bottom: 24px; }
+
+section#thesis { display: flex; flex-direction: column;}
+section#thesis h2 { margin: 32px 0; text-align: center; }
+section#thesis div#container2 { display: flex; align-items: flex-start;}
+section#thesis div.video { height: auto; max-width: calc(60vw + 48px); display: flex; flex-direction: column; justify-content: center;}
+section#thesis div.video video{ width: 60vw; margin:0 24px 24px;}
+section#thesis div.video h3 { text-align: left; font-size: 20px; margin-left: 24px; }
+section#thesis div.video p{ line-height: 1.4; margin: 0 0 32px 24px; text-align: left; width: calc(100% - 48px)}
+
+section#thesis div.images { max-width: calc(40vw - 48px);}
+section#thesis div.image-content { display: flex;}
+section#thesis div.image-content img{ width: 35%; height: 35%; padding: 16px; }
+section#thesis div.image-content div.text-content{ display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: calc(65% - 32px); }
+section#thesis div.grey{ background-color: #C8C8C8; }
+
+footer {padding:16px 24px; width: 100%; display: flex; justify-content: space-between;}
+
+@media all and (max-width: 910px) {
+  header div span {
+    display: none;
+  }
+
+  nav li a img {display: inline;}
+  nav li a span {display: none;}
+
+  section#learn div.banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#learn div.banner img {
+    width: 100%;
+    margin: 0 0 32px;
+  }
+
+  section#learn div.banner div.text-banner {
+    padding-left: 16px;
+  }
+
+  section#learn button {
+    margin-bottom: 32px;
+  }
+
+  section#orientation .column-large {
+    display: none;
+  }
+
+  section#orientation div.column-small div.image-content {
+    flex-direction: column;
+  }
+
+  section#orientation div.column-small {
+    max-width: 100%;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 0;
+  }
+
+  section#orientation div.column-small div.image-content img {
+    width: calc(100% - 32px);
+    height: auto;
+  }
+
+  section#orientation div.column-small div.grey {
+    background-color: white;
+  }
+
+  section#orientation div.column-small div.text {
+    margin: 16px 16px 32px;
+  }
+
+section#start {
+  background-color: white;
+}
+
+  section#start div#container {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  section#start div.photo {
+    width: 100%;
+    margin: 0 0 8px;
+    background-color: #C8C8C8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section#start h3 {
+    margin: 16px 16px 24px;
+  }
+
+  section#start div#container div.photo img,
+  section#start div#container div.photo span,
+  section#start div#container div.photo p {
+    display: none;
+  }
+
+section#thesis h2 {
+  margin-bottom: 16px;
+}
+
+  section#thesis div.video {
+    max-width: 100vw;
+  }
+
+  section#thesis div.video video {
+    width: 100vw;
+    margin:0 0 24px;
+  }
+
+  section#thesis div.video h3,
+  section#thesis div.video p {
+    display: none;
+  }
+
+section#thesis div.images {
+  display: none;
+}
+
+footer {
+  margin: 16px 0;
+}
+
+}
